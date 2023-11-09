@@ -80,3 +80,12 @@ document.addEventListener("keyup", event => {
 })
 
 targetRandomKey();
+
+
+
+
+
+
+//play
+
+

@@ -31,8 +31,8 @@ body {
 }
   .pc-container {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
   }
   
   .pc {
@@ -49,14 +49,14 @@ body {
     left: 10px;
     right: 10px;
     bottom: 10px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
     overflow: auto;
     padding: 20px;
   }
   
   .title {
-    color: mintcream;
+    color: transparent;
     text-transform: uppercase;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -374,3 +374,46 @@ body {
   
   /* hover events */
   
+
+  /*robot saludando */
+
+  .saludoEstella{
+    width: 100%;
+    height: 95%;
+    background-color: blue;
+  }
+.title{
+  color: white;
+}
+
+/* Animación de vibración */
+@keyframes vibracion {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px) rotate(-15deg); }
+  50% { transform: translateX(2px) rotate(15deg); }
+  75% { transform: translateX(-2px) rotate(-15deg); }
+  100% { transform: translateX(2px) rotate(15deg); }
+}
+
+/* Aplicar la animación al elemento con id "P" cuando tiene la clase "pinky" */
+.pinky#P {
+  animation: vibracion 1.5s infinite;
+}
+
+.juegos2 {
+  background-color: wheat;
+}
+
+.titulo2{
+  display: flex;
+  
+}
+
+  /* Estilos para pantallas mayores a 920px */
+@media screen and (max-width: 920px) {
+  /* Ocultar elementos con id diferente de "p" */
+  li[id]:not(#P) {
+    display: none;
+  }
+}
+
