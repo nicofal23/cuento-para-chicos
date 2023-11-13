@@ -81,7 +81,9 @@ body {
     width: 100%;
   }
 
-
+  #inputOculto {
+    display: none;
+  }
 
 
 
@@ -96,5 +98,10 @@ body {
     .parrafo {
       margin-left: 0px;
       margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    #inputOculto {
+      display: block;
     }
   }
