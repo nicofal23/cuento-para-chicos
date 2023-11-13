@@ -63,6 +63,13 @@ function checkAnswer(selectedLetter) {
     }, 2000);
   }
 
+
+  const inputOculto = document.getElementById('inputOculto');
+  if (inputOculto) {
+    inputOculto.focus();
+  }
+
+
   updateScore();
   showRandomLetter();
 }
